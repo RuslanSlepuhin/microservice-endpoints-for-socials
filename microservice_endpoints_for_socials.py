@@ -7,7 +7,11 @@ server = Flask(__name__)
 
 @server.route('/', methods=['GET'])
 def get_message():
-    return 'MicroService is working', 200
+    return f'MicroService is working\n' \
+           f'End-points:\n' \
+           f'/auth\n' \
+           f'/auth-callback\n' \
+           f'signin-linkedin', 200
 
 
 @server.route('/auth', methods=['POST', 'GET'])
