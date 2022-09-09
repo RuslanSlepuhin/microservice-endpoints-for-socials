@@ -1,0 +1,1 @@
+web: gunicorn microservice_endpoints_for_socials:server
